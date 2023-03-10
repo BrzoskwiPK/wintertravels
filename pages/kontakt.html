@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WinterTravels</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/kontakt.css">
+    <link rel="icon" href="../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8873d24936.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+        <header class="header">
+            <figure>
+                <a href="index.html"><img src="../images/logo.png" alt="Page Logo" class="headerLogo"></a>
+            </figure>
+            <nav class="navigation">
+                <a href="kontakt.html" class="hvr-underline-from-center active">KONTAKT</a>
+                <a href="oferty.html" class="hvr-underline-from-center">OFERTY</a>
+                <a href="promocje.html" class="hvr-underline-from-center">PROMOCJE</a>
+                <a href="galeria.html" class="hvr-underline-from-center">GALERIA</a>
+                <a href="index.html" class="hvr-underline-from-center">HOME</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleClasses()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="formContainer">
+                <div class="contactBox">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2>KONTAKT</h2>
+                        <form>
+                            <input type="text" class="field" placeholder="NAZWISKO" required id="nazwisko" onblur="validateName()">
+                            <input type="text" class="field" placeholder="E-MAIL" required id="mail" onblur="validateEmail()">
+                            <input type="text" class="field" placeholder="TELEFON" required id="telefon" onblur="validatePhoneNo()">
+                            <input type="date" class="field" required>
+                            <input type="number" class="field" placeholder="ILOŚĆ DNI: " required>
+                            <select required value="8" class="field">
+                                <option>CIEŚNINA BRANSFIELDA</option>
+                                <option>MURMAŃSK</option>
+                                <option>PORT LOCKROY</option>
+                                <option>ICECAP</option>
+                                <option>DECEPTION ISLAND</option>
+                                <option>SPITSBERGEN</option>
+                                <option>REJS PO ARKTYCE</option>
+                                <option>LODOŁAMACZEM PO BIEGUNIE</option>
+                            </select>
+                            <textarea placeholder="UWAGI" class="field" required></textarea>
+                            <button class="button">WYŚLIJ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            Copyright 2020 &copy; Gabriel Brzoskwinia, IIIF ZSE.
+        </footer>
+        <script defer src="../scripts/scripts.js"></script>
+        <script defer src="../scripts/formValidators.js"></script>
+  </body>
+</html>

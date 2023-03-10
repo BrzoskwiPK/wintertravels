@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WinterTravels</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/oferty.css">
+    <link rel="icon" href="../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8873d24936.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+        <header class="header">
+            <figure>
+                <a href="index.html"><img src="../images/logo.png" alt="Page Logo" class="headerLogo"></a>
+            </figure>
+            <nav class="navigation">
+                <a href="kontakt.html" class="hvr-underline-from-center">KONTAKT</a>
+                <a href="oferty.html" class="hvr-underline-from-center active">OFERTY</a>
+                <a href="promocje.html" class="hvr-underline-from-center">PROMOCJE</a>
+                <a href="galeria.html" class="hvr-underline-from-center">GALERIA</a>
+                <a href="index.html" class="hvr-underline-from-center">HOME</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleClasses()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="offers">
+                <h1 class="offersName">OFERTA</h1>
+                <p class="offersSubtitle">Zapraszamy do przejrzenia naszej oferty, mamy nadzieję, że znajdziecie coś dla siebie!</p>
+            </div>
+            <div class="slider">
+                <img src="../images/murmansk.jpg" alt="Murmańsk" class="offersImage">
+                <p class="sliderName">Murmańsk</p>
+                <p>
+                    <span class="highCost">2500 zł</span>
+                    <span class="smallCost">2199 zł</span>
+                </p>
+                <p>
+                    <i class="fas fa-backward previousSlide" onclick="handlePreviousSlide()"></i>
+                    <i class="fas fa-forward nextSlide" onclick="handleNextSlide()"></i>
+                </p>
+            </div>
+        </main>
+        <footer class="footer">
+            Copyright 2020 &copy; Gabriel Brzoskwinia, IIIF ZSE.
+        </footer>
+        <script defer src="../scripts/scripts.js"></script>
+        <script defer src="../scripts/slider.js"></script>
+  </body>
+</html>
